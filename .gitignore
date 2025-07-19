@@ -336,4 +336,3 @@ __pycache__
 # Ignore everything in Videos and Audios folders
 **/Video/**
 **/Audio/**
-**/Image/**
