@@ -324,3 +324,16 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+# Python
+__pycache__
+*.ipynb_checkpoints
+*.virtual_documents
+
+# Ignore everything in the media folder
+**/media/**
+
+# Ignore everything in Videos and Audios folders
+**/Video/**
+**/Audio/**
+**/Image/**
