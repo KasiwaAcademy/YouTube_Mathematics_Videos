@@ -1,7 +1,7 @@
 from manim import *
 
-config.pixel_width = 1080
-config.pixel_height = 1920
+config.pixel_width = 1920
+config.pixel_height = 1080
 config.frame_rate = 30
 
 class Quadratic(Scene):
