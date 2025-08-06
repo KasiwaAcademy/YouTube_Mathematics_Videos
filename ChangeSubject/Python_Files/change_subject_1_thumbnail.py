@@ -11,16 +11,16 @@ class Thumbnail(Scene):
         
         # Title text
         title = Text(
-            "Rationalizing", font="Roboto", weight=BOLD, color=YELLOW
+            "Change Subject", font="Roboto", weight=BOLD, color=YELLOW
         ).scale(1.5).to_edge(UP)
 
         subtitle = Text(
-            "the Denominator", font="Roboto", weight=BOLD, color=WHITE
+            "of Formula", font="Roboto", weight=BOLD, color=WHITE
         ).scale(1.5).next_to(title, DOWN, buff=0.3)
 
         # Quadratic Formula
         formula = MathTex(
-            r"x = \frac{6}{\sqrt{32}}", color=WHITE
+            r"x = \frac{b - k^3}{k^3}", color=WHITE
         ).scale(1.7).next_to(subtitle, DOWN, buff=1)
 
         # Add everything
