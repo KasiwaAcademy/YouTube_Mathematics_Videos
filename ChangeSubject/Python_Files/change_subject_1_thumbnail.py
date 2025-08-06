@@ -11,11 +11,11 @@ class Thumbnail(Scene):
         
         # Title text
         title = Text(
-            "Change Subject", font="Roboto", weight=BOLD, color=YELLOW
+            "Change", font="Roboto", weight=BOLD, color=YELLOW
         ).scale(1.5).to_edge(UP)
 
         subtitle = Text(
-            "Subjof Formula", font="Roboto", weight=BOLD, color=WHITE
+            "Subject of Formula", font="Roboto", weight=BOLD, color=WHITE
         ).scale(1.5).next_to(title, DOWN, buff=0.3)
 
         # Quadratic Formula
