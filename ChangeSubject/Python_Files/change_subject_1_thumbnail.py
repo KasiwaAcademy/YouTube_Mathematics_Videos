@@ -15,7 +15,7 @@ class Thumbnail(Scene):
         ).scale(1.5).to_edge(UP)
 
         subtitle = Text(
-            "of Formula", font="Roboto", weight=BOLD, color=WHITE
+            "Subjof Formula", font="Roboto", weight=BOLD, color=WHITE
         ).scale(1.5).next_to(title, DOWN, buff=0.3)
 
         # Quadratic Formula
