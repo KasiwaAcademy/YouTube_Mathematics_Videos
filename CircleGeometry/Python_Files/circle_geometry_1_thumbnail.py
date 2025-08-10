@@ -8,20 +8,21 @@ class Thumbnail(Scene):
         background.scale_to_fit_height(config.frame_height)
         background.scale_to_fit_width(config.frame_width)
         self.add(background)
+
+        # Color Configurations
+        main_color = BLUE_A
+        accent_color = YELLOW
+        secondary_color = GREEN
+        text_color = WHITE
         
         # Title text
         title = Text(
-            "Change", font="Roboto", weight=BOLD, color=YELLOW
+            "Solving", font="Roboto", weight=BOLD, color=YELLOW
         ).scale(1.5).to_edge(UP)
 
         subtitle = Text(
-            "Subject of Formula", font="Roboto", weight=BOLD, color=WHITE
+            "Circle Geometry Problem", font="Roboto", weight=BOLD, color=WHITE
         ).scale(1.5).next_to(title, DOWN, buff=0.3)
-
-        # Quadratic Formula
-        formula = MathTex(
-            r"x = \frac{b - k^3}{k^3}", color=WHITE
-        ).scale(1.7).next_to(subtitle, DOWN, buff=1)
         
         ## Create the diagram
         circle = Circle(radius=1.75, color=main_color, stroke_width=2).shift(DOWN)
