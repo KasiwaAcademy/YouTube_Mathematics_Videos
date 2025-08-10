@@ -1,4 +1,5 @@
 # Circle_Geometry_One
+from manim import *
 
 config.pixel_width = 1920
 config.pixel_height = 1080
