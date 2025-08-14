@@ -30,7 +30,7 @@ class QuadraticEquation(VoiceoverScene):
 
         # Intro
         text_1 = """
-                Hello, welcome to yet another lesson on solving quadratic equestions here at Kasiwa \
+                Hello, welcome to yet another lesson on solving quadratic equations here at Kasiwa \
                 Academy. Please stay with us as we continue helping each other grow Mathematical skills.
                  """
         with self.voiceover(text_1) as tracker:
@@ -74,9 +74,9 @@ class QuadraticEquation(VoiceoverScene):
 
         # Slide 3
         text_4 = """
-                We will use the quadratic formula which is derived from the standard quadratic equation\
-                ax² + bx + c = 0 where a \N{NOT EQUAL TO} 0. Comparing the given equation to this form, we find that\
-                a=3, b=6 and c=\N{MINUS SIGN}2.
+                We will use the quadratic formula which is derived from the standard quadratic equation. \
+                Comparing the given equation to this form, we find that a is equal to 3, b is equal to 6 and\
+                c is equal to \N{MINUS SIGN}2.
                  """
         with self.voiceover(text_4) as tracker:
             sub_title_3 = Tex(r"Use the quadratic formula :", color=YELLOW).shift(2*DOWN)
