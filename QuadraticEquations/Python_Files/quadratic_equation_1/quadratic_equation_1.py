@@ -16,7 +16,7 @@ class QuadraticEquation(VoiceoverScene):
         self.set_speech_service(GTTSService(lang="en"))
 
         # Add background image
-        background = ImageMobject("../../Imagechalk_board.jpg")
+        background = ImageMobject("../../Image/chalk_board.jpg")
         background.set_z_index(-1)
         background.scale_to_fit_height(config.frame_height)
         background.scale_to_fit_width(config.frame_width)
