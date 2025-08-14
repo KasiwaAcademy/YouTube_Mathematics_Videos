@@ -16,14 +16,14 @@ class QuadraticEquation(VoiceoverScene):
         self.set_speech_service(GTTSService(lang="en"))
 
         # Add background image
-        background = ImageMobject("./chalk_board.jpg")
+        background = ImageMobject("../../Imagechalk_board.jpg")
         background.set_z_index(-1)
         background.scale_to_fit_height(config.frame_height)
         background.scale_to_fit_width(config.frame_width)
         self.add(background)
 
         # Load and position logo image
-        logo = ImageMobject("./logo.png")
+        logo = ImageMobject("../../Image/logo.png")
         logo_corner = logo.scale(0.15)
         logo_corner.to_corner(DR)
         self.add(logo_corner)
@@ -76,7 +76,7 @@ class QuadraticEquation(VoiceoverScene):
         text_4 = """
                 We will use the quadratic formula which is derived from the standard quadratic equation\
                 a x² + bx + c = 0 where a is not equal to 0. Comparing the given equation to this form, we find that\
-                a=3, b=6 and c=negative 2.
+                aa=3, b=6 and c=negative 2.
                  """
         with self.voiceover(text_4) as tracker:
             sub_title_3 = Tex(r"Use the quadratic formula :", color=YELLOW).shift(2*DOWN)
