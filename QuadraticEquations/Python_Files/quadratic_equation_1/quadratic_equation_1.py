@@ -30,7 +30,7 @@ class QuadraticEquation(VoiceoverScene):
 
         # Intro
         text_1 = """
-                Hello, welcome to yet another lesson on solving quadratic equestions here at Kasiwaa \
+                Hello, welcome to yet another lesson on solving quadratic equestions here at Kasiwa \
                 Academy. Please stay with us as we continue helping each other grow Mathematical skills.
                  """
         with self.voiceover(text_1) as tracker:
@@ -44,7 +44,7 @@ class QuadraticEquation(VoiceoverScene):
         # Slide 1
         text_2 = """
                 Let us begin by introducing our problem that we will solve. We are given a quadratic equation \
-                3x² + 6x minus 2 = 0. We are asked to solve the equation giving the final answer correct to three significant figures. 
+                3x² + 6x \N{MINUS SIGN} 2 = 0. We are asked to solve the equation giving the final answer correct to three significant figures. 
                  """
         with self.voiceover(text_2) as tracker:
             sub_title_1 = Tex(r"Problem Statement :", color=YELLOW)
@@ -63,7 +63,7 @@ class QuadraticEquation(VoiceoverScene):
                  """
         with self.voiceover(text_3) as tracker:
             sub_title_2 = Tex(r"Start with the given equation :", color=YELLOW).shift(2*DOWN)
-            eq1 = MathTex(r"3x^2 + 6x -2 = 0")
+            eq1 = MathTex(r"3x^2 + 6x - 2 = 0")
             self.play(Write(sub_title_2))
             self.wait()
             self.play(FadeOut(sub_title_1, statement_1, shift=UP), sub_title_2.animate.to_edge(UP).set_color(WHITE).scale(1.5),
@@ -73,10 +73,11 @@ class QuadraticEquation(VoiceoverScene):
         self.wait()
 
         # Slide 3
-        text_4 = """
+        equation = "ax² + bx + c = 0".replace("x²", "x squared") 
+        text_4 = f"""
                 We will use the quadratic formula which is derived from the standard quadratic equation\
-                a x² + bx + c = 0 where a is not equal to 0. Comparing the given equation to this form, we find that\
-                aa=3, b=6 and c=negative 2.
+                {equation} where a \N{NOT EQUAL TO} 0. Comparing the given equation to this form, we find that\
+                a=3, b=6 and c=\N{MINUS SIGN}2.
                  """
         with self.voiceover(text_4) as tracker:
             sub_title_3 = Tex(r"Use the quadratic formula :", color=YELLOW).shift(2*DOWN)
