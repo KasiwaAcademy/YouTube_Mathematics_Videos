@@ -73,10 +73,9 @@ class QuadraticEquation(VoiceoverScene):
         self.wait()
 
         # Slide 3
-        equation = "ax² + bx + c = 0".replace("x²", "x squared") 
-        text_4 = f"""
+        text_4 = """
                 We will use the quadratic formula which is derived from the standard quadratic equation\
-                {equation} where a \N{NOT EQUAL TO} 0. Comparing the given equation to this form, we find that\
+                ax² + bx + c = 0 where a \N{NOT EQUAL TO} 0. Comparing the given equation to this form, we find that\
                 a=3, b=6 and c=\N{MINUS SIGN}2.
                  """
         with self.voiceover(text_4) as tracker:
