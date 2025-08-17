@@ -67,10 +67,10 @@ class DomainRange(VoiceoverScene):
         text_2 = """
                 Before we start solving our problem, let us recall some important definitions. <bookmark mark="A"/> A function  is a rule or \
                 relationship that assigns each input exactly one output. <bookmark mark="B"/> The input usually writtenas x is called the independent \
-                variable. <bookmark mark="C"/> The output written as f of x or as in our case g of x is the independent variable. <bookmark mark="D"/> The domain represents \
+                variable. <bookmark mark="C"/> The output written as f of x or as in our case g of x is the dependent variable. <bookmark mark="D"/> The domain represents \
                 all possible input values of the independent variable x. <bookmark mark="E"/> The range represents all possible output values of the dependent \
-                variable y, which is represented as g of x in our problem. In other words, the domain tells us what values x can take \
-                and the range tells us what-values-the-function-produces-as-output.
+                variable y which is represented as g of x in our problem. In other words, the domain tells us what values x can take \
+                and the-range-tells-us-what-values-the-function-produces-as-output.
                  """
         with self.voiceover(text=text_2) as tracker:
             sub_title_2 = Tex(r"\textbf{Define terms}:", color=YELLOW).to_edge(DOWN)
