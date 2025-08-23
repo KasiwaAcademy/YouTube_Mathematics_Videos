@@ -13,7 +13,7 @@ class GradientOfLine(Scene):
         my_template.add_to_preamble(r"\usepackage{cancel}")
 
         # Load and position logo image
-        logo = ImageMobject("./logo.png")
+        logo = ImageMobject("../Image/logo.png")
         logo_corner = logo.scale(0.15)
         logo_corner.to_corner(DR, buff=-0.2)
         self.add(logo_corner)
