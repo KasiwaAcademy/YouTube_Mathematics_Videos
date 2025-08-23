@@ -91,7 +91,7 @@ class GradientOfLine(Scene):
 
         # Final Answer
         sub_title_3 = Tex(r"Final Answer:", color=YELLOW_B).to_edge(UP).scale(1.3)
-        final_answer = MathTex(r"\boxed{x = -11}", color=YELLOW_C).scale(2)
+        final_answer = MathTex(r"\boxed{b = -11}", color=YELLOW_C).scale(2)
         final_group = VGroup(first_group, second_group)
         self.play(ReplacementTransform(sub_title_2, sub_title_3), ShrinkToCenter(final_group),
                  FadeIn(final_answer, shift=UP))
